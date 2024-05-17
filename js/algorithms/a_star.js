@@ -77,7 +77,7 @@ async function a_star(grid, adjacent_nodes_function, heuristic) {
     let t2 = performance.now();
     
     await draw_path(grid, final_path.reverse());
-    document.getElementById('time-execute').innerText = `زمان اجرا: ${t2-t1} میلی ثانیه`;
+    document.getElementById('time-execute').innerText = `زمان اجرا: ${(t2-t1).toFixed(0)} میلی ثانیه`;
     document.getElementById('node-counter').innerText = `نود های بررسی شده: ${nodeCounter}`;
 }
 

@@ -45,7 +45,7 @@ async function bfs(grid, adjacent_nodes_function) {
 
     await draw_path(grid, final_path);
     let t2 = performance.now();
-    document.getElementById('time-execute').innerText = `زمان اجرا: ${t2-t1} میلی ثانیه`;
+    document.getElementById('time-execute').innerText = `زمان اجرا: ${(t2-t1).toFixed(0)} میلی ثانیه`;
     
     document.getElementById('node-counter').innerText = `نود های بررسی شده: ${nodeCounter}`;
 }
