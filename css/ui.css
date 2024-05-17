@@ -1,0 +1,149 @@
+@font-face {
+    font-family: Vazir;
+    src:
+        url(../fonts/Vazir.ttf) format(truetype),
+        url(../fonts/Vazir.woff2) format(woff2);
+}
+
+@font-face {
+    font-family: "Vazir Light";
+    src: 
+        url(../fonts/Vazir-Light.ttf) format(truetype),
+        url(../fonts/Vazir-Light.woff2) format(woff2);
+}
+* {
+    font-family: Vazir;
+}
+
+body {
+    margin: 0;
+    background-image: linear-gradient(106deg, rgba(255,34,213,0.8576680672268908) 0%, rgba(86,186,224,1) 67%);
+    color: #b8b8b8;
+    display: flex;
+}
+
+.topbar {
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    /* padding: 0.5em;
+    border-radius: 5vh; */
+    /* background-color: #3b3b3b; */
+    transition: 0.5s;
+}
+.row{
+    display:flex;
+    flex-direction: column;
+    margin:50px;
+}
+
+.button-box {
+    margin-top: 1vh;
+}
+
+.button-group {
+    height: 100%;
+    padding: 0.2em;
+    padding-left: 1em;
+    padding-right: 1em;
+    zoom: 0.7;
+}
+
+.button {
+    width:180px;
+    border: none;
+    padding: 5px 20px;
+    background: linear-gradient(to bottom right, #e2428f, #52195f);
+    border-radius: 12px;
+    color: #FFFFFF;
+    cursor: pointer;
+    outline: transparent;
+    border-radius: 10px;
+    transition: box-shadow .2s ease-in-out;
+    transition: all 0.3s;
+    font-family: "Vazir";
+    font-size: 20px;
+    box-shadow: 0px 0px 20px 0px #2a8f87;
+    margin: 20px;
+}
+
+
+.button-cost {
+    background-image: url('../img/coin.png');
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.button:hover {
+    opacity: 1;
+}
+
+.size-input {
+    width: 3.5em;
+    text-align: center;
+    transition: 0.5s;
+    font-size: 1em;
+    margin: 0.4em;
+    border: none;
+    border-radius: 1em;
+}
+
+.algorithm-box {
+    display: flex;
+    align-items:center;
+}
+
+.algorithm-select-container {
+    display: inline-flex;
+    align-items:center;
+}
+
+.algorithm-select {
+    border: none;
+    border-radius: 5em;
+    padding: 0.3em;
+    font-size: 0.9em;
+}
+
+.diagonal-checkbox-container {
+    margin-top: 0.2em;
+    color: #f1f0f0;
+}
+
+.cost-container {
+    display: inline-flex;
+    align-items:center;
+}
+
+.cost-input {
+    display: none;
+    transition: 0.5s;
+    width: 2vw;
+    font-size: 0.9em;
+}
+
+.hide {
+    display: none !important;
+}
+
+.algorithm-box{
+    padding:50px;
+    font-family: Vazir !important;
+    font-size: 20px;
+    width: 1100px;
+    color:#fff;
+}
+#time-execute,#node-counter{
+    background-image: linear-gradient(200deg, rgba(5,109,159,1) 10%, rgba(3,28,57,1) 100%);
+    color: #fff;
+    text-align: right;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#node-counter{
+    margin-top:20px;
+    background-image: linear-gradient(200deg, rgb(40, 99, 34) 10%, rgba(3,28,57,1) 100%);
+}
+
+
